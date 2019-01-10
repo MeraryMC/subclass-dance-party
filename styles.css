@@ -1,5 +1,10 @@
 body, html{
   height:100%;
+  background-image: url("src/images/danceFloorOne.jpg");
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+
 }
 body{
   margin: 0px;
@@ -17,11 +22,48 @@ body, a:link, a:visited, a:active{
   height:32px;
   background-color: #555;
 }
+
 .title{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  content: url("src/images/pug.gif");
+  position:absolute;
+  height: 150px;
+  width: auto;
+}
+
+.carlton{
+  content: url("src/images/carlton.gif");
+  height: 150px;
+  width: auto;
   position:absolute;
 }
+
+.shark{
+  content: url("src/images/leftshark.gif");
+  height: 150px;
+  width: 130px;
+  position:absolute;
+}
+
+.cat{
+  content: url("src/images/flyingcat.gif");
+  height: 150px;
+  width: auto;
+  position:absolute;
+}
+
+.lineUp{
+  padding:5px 12px;
+  float:right;
+}
+
+.animated{
+  animation: 1s infinite;
+}
+
+.changeColor{
+  content: url("src/images/stitch.gif");
+}
+

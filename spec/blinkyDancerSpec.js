@@ -5,7 +5,7 @@ describe('blinkyDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    blinkyDancer = makeBlinkyDancer(10, 20, timeBetweenSteps);
+    blinkyDancer = new makeBlinkyDancer(10, 20, timeBetweenSteps);
   });
 
   it('should have a jQuery $node object', function() {
@@ -31,4 +31,34 @@ describe('blinkyDancer', function() {
       expect(blinkyDancer.step.callCount).to.be.equal(2);
     });
   });
+});
+
+describe('carltonDancer', function() {
+
+  var carltonDancer, clock;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    carltonDancer = new Carlton(10, 20);
+  });
+
+  it('should have a jQuery $node object', function() {
+    expect(carltonDancer.$node).to.be.an.instanceof(jQuery);
+  });
+
+});
+
+describe('sharkDancer', function() {
+
+  var sharkDancer, clock;
+
+  beforeEach(function() {
+    clock = sinon.useFakeTimers();
+    sharkDancer = new Shark(10, 20);
+  });
+
+  it('should have a jQuery $node object', function() {
+    expect(sharkDancer.$node).to.be.an.instanceof(jQuery);
+  });
+
 });
